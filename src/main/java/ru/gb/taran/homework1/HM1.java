@@ -1,8 +1,6 @@
 package ru.gb.taran.homework1;
 
-import javax.xml.bind.SchemaOutputResolver;
-
-public class HomeWorkApp {
+public class HM1 {
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
