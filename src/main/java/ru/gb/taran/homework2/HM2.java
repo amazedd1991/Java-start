@@ -5,7 +5,7 @@ public class HM2 {
         summary(5, 5);
         positiveOrNegative(1);
         trueNumber(1);
-        stringsAndNumbers("Hallo world!!!", 3);
+        stringsAndNumbers("Hallo world!!!", 5);
 
     }
 
@@ -37,7 +37,7 @@ public class HM2 {
     }
 
     public static void stringsAndNumbers(String words, int number) {
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < number; i++) {
             System.out.println(words);
 
         }
