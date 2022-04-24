@@ -5,15 +5,15 @@ import java.util.Random;
 
 public class HM3 {
     public static void main(String[] args) {
-        method1();
-        method2();
-        method3();
-        method4();
-        method5(10, 7);
-        method6();
+        massive();
+        massiveHundred();
+        numbersLowerSix();
+        massiveDiagonal();
+        massiveReturn(10, 7);
+        minAndMaxElements();
     }
 
-    public static void method1() {
+    public static void massive() {
         int[] arr = {0, 1, 1, 0, 1};
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] <= 0) {
@@ -27,7 +27,7 @@ public class HM3 {
         System.out.println();
     }
 
-    public static void method2() {
+    public static void massiveHundred() {
         int[] a = new int[100];
         for (int i = 0; i < a.length; i++) {
             a[i] = i;
@@ -36,7 +36,7 @@ public class HM3 {
         System.out.println();
     }
 
-    public static void method3() {
+    public static void numbersLowerSix() {
         int[] arr = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] >= 6) {
@@ -47,7 +47,7 @@ public class HM3 {
         System.out.println();
     }
 
-    public static void method4() {
+    public static void massiveDiagonal() {
         int[][] arr = new int[5][5];
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
@@ -62,7 +62,7 @@ public class HM3 {
     }
 
 
-    public static void method5(int len, int initialValue) {
+    public static void massiveReturn(int len, int initialValue) {
         int[] arr = new int[len];
         for (int i = 0; i < len; i++) {
             arr[i] = initialValue;
@@ -71,7 +71,7 @@ public class HM3 {
         System.out.println();
     }
 
-    public static void method6() {
+    public static void minAndMaxElements() {
         int[] arr = new int[10];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = new Random().nextInt(101);
