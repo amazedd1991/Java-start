@@ -1,11 +1,16 @@
 package ru.gb.taran.homework3;
 
+import java.util.Arrays;
+import java.util.Random;
+
 public class HM3 {
     public static void main(String[] args) {
         method1();
         method2();
         method3();
         method4();
+        method5(10, 7);
+        method6();
     }
 
     public static void method1() {
@@ -44,15 +49,57 @@ public class HM3 {
 
     public static void method4() {
         int[][] arr = new int[5][5];
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
-
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (i == j || i + j == 4) {
+                    System.out.print("1" + ", ");
+                } else {
+                    System.out.print("0" + ", ");
+                }
             }
-
+            System.out.println();
         }
-
     }
+
+
+    public static void method5(int len, int initialValue) {
+        int[] arr = new int[len];
+        for (int i = 0; i < len; i++) {
+            arr[i] = initialValue;
+            System.out.print(arr[i] + ", ");
+        }
+        System.out.println();
+    }
+
+    public static void method6() {
+        int[] arr = new int[10];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = new Random().nextInt(101);
+        }
+        System.out.println(Arrays.toString(arr));
+
+        int minNumber = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (minNumber > arr[i]) {
+                minNumber = arr[i];
+            }
+        }
+        System.out.print("Минимальное число: " + minNumber);
+
+        int maxNumber = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (maxNumber < arr[i]) {
+                maxNumber = arr[i];
+            }
+        }
+        System.out.println();
+        System.out.print("Максимальное число: " + maxNumber);
+    }
+
+
 }
+
+
 
 
 
