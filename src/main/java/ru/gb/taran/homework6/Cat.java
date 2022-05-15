@@ -1,13 +1,12 @@
 package ru.gb.taran.homework6;
 
 public class Cat extends Animal {
-   private static int count = 0;
+    private static int count;
+
     public Cat(String name) {
         super(name);
         count++;
-
     }
-
 
     public static int getCount() {
         return count;

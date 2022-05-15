@@ -1,7 +1,8 @@
 package ru.gb.taran.homework6;
 
 public class Dog extends Animal {
-    private static int count = 0;
+    private static int count;
+
     public Dog(String name) {
         super(name);
         count++;

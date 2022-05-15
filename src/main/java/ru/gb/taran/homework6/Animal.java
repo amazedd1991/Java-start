@@ -1,8 +1,8 @@
 package ru.gb.taran.homework6;
 
-public class Animal {
+public abstract class Animal {
     protected String name;
-    private static int count = 0;
+    private static int count;
 
     public Animal(String name) {
         this.name = name;
@@ -22,12 +22,8 @@ public class Animal {
         this.name = name;
     }
 
-    public void run(int run) {
+    public abstract void run(int distance);
 
-    }
-
-    public void swim(int swim) {
-
-    }
+    public abstract void swim(int distance);
 
 }
