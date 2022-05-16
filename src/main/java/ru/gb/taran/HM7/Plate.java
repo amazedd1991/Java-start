@@ -1,8 +1,11 @@
 package ru.gb.taran.HM7;
 
 public class Plate {
-    public int food;
+    private int food;
 
+    public int getFood() {
+        return food;
+    }
 
     public Plate(int food) {
         this.food = food;
@@ -11,8 +14,13 @@ public class Plate {
     public void decreaseFood(int n) {
         food -= n;
     }
-    public void addFood(int x){
+
+    public void addFood(int x) {
         food += x;
+    }
+
+    public void setFood(int food) {
+        this.food = food;
     }
 
     public void info() {

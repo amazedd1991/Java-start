@@ -1,14 +1,32 @@
 package ru.gb.taran.HM7;
 
 public class Cat {
-    public String name;
-    public int appetite;
-    public boolean satiety;
+    private final String name;
+    private final int appetite;
+    private boolean satiety;
 
-    public Cat(String name, int appetite, boolean satiety) {
+    public boolean isSatiety() {
+        return satiety;
+    }
+
+    public void setSatiety(boolean satiety) {
+        this.satiety = satiety;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAppetite() {
+        return appetite;
+    }
+
+
+
+    public Cat(String name, int appetite) {
         this.name = name;
         this.appetite = appetite;
-        this.satiety = satiety;
+
     }
 
     public void eat(Plate p) {
