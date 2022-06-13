@@ -16,7 +16,7 @@ public class Robot implements Teamable {
 
     @Override
     public boolean isAbleToPlay() {
-        return false;
+        return true;
     }
 
     @Override
@@ -33,14 +33,14 @@ public class Robot implements Teamable {
     public void run(Track track) {
         if (isAbleToPlay()) {
             if (runLimit >= track.getLength()) {
-                System.out.println(this + " перепрыгнул через препятствие " + track);
+                System.out.println(this + " пробежал " + track);
             } else
-                System.out.println(this + " не смог перепрыгнуть препятствие" + track);
+                System.out.println(this + " не смог пробежать " + track);
         }
     }
 
     @Override
     public String toString() {
-        return "Кот " + name;
+        return "Робот " + name;
     }
 }

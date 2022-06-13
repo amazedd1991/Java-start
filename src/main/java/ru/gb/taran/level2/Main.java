@@ -19,7 +19,7 @@ public class Main {
             }
         }
 
-        System.out.println("Всю дистанцию прошёл ");
+        System.out.println("Всю дистанцию прошёл: ");
 
         for (Teamable teamable : players) {
             if (teamable.isAbleToPlay()) {
